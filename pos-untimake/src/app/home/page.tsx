@@ -19,6 +19,8 @@ import {
     Avatar,
 } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu';
+import TemporaryDrawer from '../components/appdrawer';
+import AnchorTemporaryDrawer from '../components/appdrawer';
 
 
 export default function home() {
@@ -43,7 +45,9 @@ export default function home() {
     bgcolor: 'background.paper',
   };
     return ( 
-         <Box>
+         <Box> 
+          <AnchorTemporaryDrawer />
+          
            <Container maxWidth="xl"> 
             <Box sx={{display : "flex" , justifyContent : "space-between" , mt : 4}}>
 
